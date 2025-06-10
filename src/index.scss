@@ -1,5 +1,31 @@
+@font-face {
+    font-family: 'CirceRounded';
+    src: url('./fonts/CirceRounded-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CirceRounded';
+    src: url('./fonts/CirceRounded-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
 :root {
-    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --default: #293244;
+    --muted: #A0A9B8;
+    --surface5: #D0D4DC;
+    --surface3: #F6F6F8;
+    --disabled: #44537180;
+    --disabled-btn: #4453711a;
+    --blue100: #45A5F6;
+    --blue60: #C7E4FC;
+    --blue50: #DAEDFD;
+    --red110: #E12828;
+    --red50: #FADEE0;
+    --violet: #6447CF;
+    font-family: 'CirceRounded', system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -23,11 +49,13 @@ a:hover {
 }
 
 body {
+    font-family: 'CirceRounded', system-ui, Avenir, Helvetica, Arial, sans-serif;
     margin: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
     min-height: 100vh;
+    font-size: 16px;
 }
 
 h1 {
@@ -42,7 +70,7 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
+    background-color: var(--blue100);
     cursor: pointer;
     transition: border-color 0.25s;
 }
