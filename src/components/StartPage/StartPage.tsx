@@ -1,19 +1,14 @@
 import { useNavigate } from 'react-router-dom';
+import styles from './StartPage.module.scss';
 
 const StartPage = () => {
     const navigate = useNavigate();
 
     return (
-        <div
-            style={{
-                minHeight: '100vh',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
+        <div className={styles.wrap}>
+            <h1 className={styles.title}>Добро пожаловать в тест на определение типа личности!</h1>
             <button
-                style={{ fontSize: 24, padding: '16px 32px', cursor: 'pointer' }}
+                className={styles.startButton}
                 onClick={() => navigate('/upload')}
             >
                 Начать тест
